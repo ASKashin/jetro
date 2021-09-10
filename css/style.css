@@ -11,8 +11,6 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
-    /* тут добавил margin-bottom: ; */
 }
 
 header.main .container {
@@ -73,13 +71,81 @@ header.main .menu ul li.active a {
     margin: 0;
 }
 
-.banner .scrol {
-     width: 940px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+.banner .container>img {
+    width: 140px;
 }
 
-.banner .scrol img {
-    width: 140px;
+.banner .container:first-child {
+    margin-bottom: 10px;
+}
+
+.banner {
+    margin-bottom: 40px;
+}
+
+.features h3 {
+    color: #e8603c;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.features p {
+    color: #414141;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.features .container {
+    gap: 40px;
+}
+
+button {
+    background-color: #e8603c;
+    color: white;
+    font-size: 12px;
+    width: 55px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.features h3 {
+    position: relative;
+    padding-left: 70px;
+}
+
+.features h3::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+}
+
+.features .cog::before {
+    background-image: url("../images/cog.png");
+}
+
+.features .check::before {
+    background-image: url("../images/check.png");
+}
+
+.features .user::before {
+    background-image: url("../images/user.png");
+}
+
+.recentWorks .container img {
+    width: 220px;
+}
+
+.recentWorks .container {
+    flex-direction: column;
+}
+
+.recentWorks .container .images {
+    display: flex;
+    justify-content: space-between;
 }
