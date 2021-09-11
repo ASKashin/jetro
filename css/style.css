@@ -186,3 +186,20 @@ button {
 .recentWorks .images>div {
     border: 1px solid black;
 }
+
+.Footer .container{
+    background-color: #e8603c;
+    justify-content: space-evenly;
+    gap: 70px;
+    padding: 40px;
+}
+
+.Footer h3{
+    font-size: 20px;
+    color: #fff;
+}
+
+.Footer p{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
