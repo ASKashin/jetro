@@ -71,8 +71,29 @@ header.main .menu ul li.active a {
     margin: 0;
 }
 
-.banner .container>img {
+/* 1 */
+
+/* .banner .container>img {
     width: 140px;
+} */
+
+/* 2 */
+
+.banner .list {
+width: 940px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+gap: 5px;
+padding: 0;
+}
+.banner .list li {
+    display: inline-block;
+}
+
+.banner .list img{
+    width: 140px;
+    height: 120px;
 }
 
 .banner .container:first-child {
@@ -208,12 +229,12 @@ button {
     flex: 1;
 }
 
-.Footer .link{
+.Footer .link {
     color: #f1b09b;
     text-decoration: none;
 }
 
-.Footer img{
+.Footer img {
     width: 20px;
     height: 21px;
 }
@@ -230,11 +251,11 @@ button {
     display: inline-block;
 }
 
-.banner::before {
+.banner .container::before {
     content: " ";
     width: 220px;
     height: 60px;
-    background:  blue;
+    background: blue;
     position: absolute;
     left: 0;
     top: 0;
